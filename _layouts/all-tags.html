@@ -1,0 +1,15 @@
+---
+layout: page
+---
+
+<div class="post-tags">
+<ul>
+	{% include collecttags.html %}
+	{% for tag in tags %}
+  <li>
+		<a href="{{ site.baseurl }}/tag/{{ tag }}" style="font-size: 20px;">{{ tag }}</a>
+  </li>
+	<br>
+	{% endfor %}
+</ul>
+</div>

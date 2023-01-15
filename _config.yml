@@ -1,0 +1,12 @@
+# site setting
+
+title: Please-type-your-Github-name-here's Blog
+
+remote_theme: Jekyll/Minima
+
+show_description: true
+
+header_pages:
+  - all-tags.md
+  - archive.md
+  - about.md
