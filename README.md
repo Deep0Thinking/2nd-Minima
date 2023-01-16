@@ -128,4 +128,6 @@ The instruction of modifying [**archive**](https://deep0thinking.github.io/2nd-M
 
 <h4 id="2.6">2.6 favicon</h4>
 
-Favicon is the icon that represents your webpage and you can design your own favicon for your webpage, here I recommend [favicon.io](https://favicon.io), it is a website that allows you to design and generate your favicon freely and conveniently. After you've done creating your favicon, all you need to do it to put the generated "**favicon.ico**" file under the "**/favicon/**" folder ***(Attention: The file name of that favicon file you put under the "**/favicon/**" folder must be "**favicon.ico**" exactly, or it won't work)***, then your webpage would be able to show the favicon you designed.
+Favicon is the icon that represents your webpage (did you notice the black icon located next to your webpage title? Yeah, that is the favicon I set as default for this repository, and I'll tell you how to change it) and you can design your own favicon for your webpage, here I recommend [favicon.io](https://favicon.io), it is a website that allows you to design and generate your favicon freely and conveniently.
+
+After you've done creating your favicon, all you need to do is to place the generated "**favicon.ico**" file under the "**/favicon/**" folder to **replace** the old one (the old "**favicon.ico**" file) I've put there before ***(Attention: The file name of the favicon file you put under the "/favicon/" folder must be "favicon.ico" exactly, or it won't work)***, then your webpage would be able to show the favicon you designed.
