@@ -46,6 +46,8 @@ To be more specific, it is an advanced modified-version **template** of personal
 
 And here is a [**2nd-Minima**](https://github.com/Deep0Thinking/2nd-Minima) based website sample: [Deep0Thinking.github.io](https://deep0thinking.github.io)
 
+![Deep0Thinking.github.io](https://repository-images.githubusercontent.com/589368822/c878cee3-1b76-4852-a06a-f8a773679ff5)
+
 <h4 id="0.2">0.2 About the "/README.md"</h4>
 
 This "[**/README.md**](https://github.com/Deep0Thinking/2nd-Minima/blob/master/README.md)" file is considered to be a manual or handbook for the [**2nd-Minima**](https://github.com/Deep0Thinking/2nd-Minima) repository. I would try to explain everything as I can to help you to understand it and modify it according to your preference.
