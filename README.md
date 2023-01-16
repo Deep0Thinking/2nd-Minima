@@ -40,9 +40,9 @@
 
 <h4 id="0.1">0.1 About the 2nd-Minima repository</h4>
 
-This Github repository is designed for the people who want to build a simple personal website handily (based on [Jekyll-theme-Minima](https://github.com/jekyll/minima)) but are not familiar with front-end programming languages.
+This Github repository is designed for the people who want to build a personal website handily (based on [Jekyll-theme-Minima](https://github.com/jekyll/minima)) but are not familiar with front-end programming languages.
 
-To be more specific, it is an advanced modified-version **template** of personal website based on [Jekyll-theme-Minima](https://github.com/jekyll/minima).
+To be more specific, it is an advanced modified-version **template** of personal websites based on [Jekyll-theme-Minima](https://github.com/jekyll/minima).
 
 And here is a [**2nd-Minima**](https://github.com/Deep0Thinking/2nd-Minima) based website sample: [Deep0Thinking.github.io](https://deep0thinking.github.io)
 

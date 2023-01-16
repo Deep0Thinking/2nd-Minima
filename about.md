@@ -105,4 +105,4 @@ Finally, after getting familiar with these procedure, you can delete this instru
 
 <hr>
 
-<h1><a href="https://github.com/Deep0Thinking/2nd-Minima#2.4">fake comments section</a></h1>
+<h1><a href="https://github.com/Deep0Thinking/2nd-Minima#2.3">fake comments section</a></h1>
