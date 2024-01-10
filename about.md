@@ -3,33 +3,6 @@ layout: page
 title: About
 ---
 
-<head>
-
-	<style>
-		.link_s
-		{
-			transition: 0.3s;
-			text-decoration: none;
-			font-size: 7.5vmin;
-			color: black;
-			margin-right: 2vmin;
-			display: inline-block;
-		}
-
-		.link_s:hover
-		{
-			color: DodgerBlue;
-			text-decoration: underline;
-			transform: scale(1.2);
-			transition: 0.3s;
-		}
-	</style>
-
-	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-</head>
-
-
 
 <div style="display: flex; align-items: center;">
 	<div style="flex-grow: 1; text-align: center; margin-right: 2.5vmin;">
@@ -81,10 +54,10 @@ Your DiscordTag or Facebook.....
 
 ### Maybe your Information On Other Platforms:
 <div style="display: inline;">
-	<a class="link_s" href="https://Please-paste-your-Github-profile-link-here" target="_blank"><i class="ri-github-line"></i></a>
-	<a class="link_s" href="https://Please-paste-your-Youtube-channel-link-here" target="_blank"><i class="ri-youtube-line"></i></a>
-	<a class="link_s" href="https://Please-paste-your-Discord-profile-or-server-link-here" target="_blank"><i class="ri-discord-line"></i></a>
-	<a class="link_s" href="https://Please-paste-your-Instagram-profile-link-here" target="_blank"><i class="ri-instagram-line"></i></a>
+	<a class="Icon-link" href="https://Please-paste-your-Github-profile-link-here" target="_blank"><i class="ri-github-line"></i></a>
+	<a class="Icon-link" href="https://Please-paste-your-Youtube-channel-link-here" target="_blank"><i class="ri-youtube-line"></i></a>
+	<a class="Icon-link" href="https://Please-paste-your-Discord-profile-or-server-link-here" target="_blank"><i class="ri-discord-line"></i></a>
+	<a class="Icon-link" href="https://Please-paste-your-Instagram-profile-link-here" target="_blank"><i class="ri-instagram-line"></i></a>
 </div>
 
 

@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="home">
-  
+
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
@@ -43,7 +43,23 @@ layout: default
         <br><br>
 
         {%- if site.show_description -%}
-          {{ post.description }}
+          <div class="post-info">
+
+            <!-- Post Thumbnail -->
+            {%- if post.thumbnail -%}
+              <div class="post-thumbnail">
+                <img src="{{ post.thumbnail }}" alt="Post Thumbnail">
+              </div>
+            {%- endif -%}
+        
+            <!-- Description -->
+            {%- if post.description -%}
+              <div class="post-description">
+                {{ post.description }}
+              </div>
+            {%- endif -%}
+
+          </div>
         {%- endif -%}
 
       </li>
