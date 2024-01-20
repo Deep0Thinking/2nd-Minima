@@ -1,33 +1,21 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
 
-  {%- include head.html -%}
+{%- include head.html -%}
 
-  <style>
+<body>
 
-    .site-header
-    {
-      position: sticky;
-      top: 0px;
-      background-color: rgba(255,255,255,1);
-      z-index: 1;
-    }
+  {%- include header.html -%}
 
-  </style>
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper" style="text-align: justify;">
+      {% toc %}
+      {{ content }}
+    </div>
+  </main>
 
-  <body>
+</body>
 
-    {%- include header.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper" style="text-align: justify;">
-        {% toc %}
-        {{ content }}
-      </div>
-    </main>
-
-  </body>
-
-  <script src="{{ "assets/js/custom-styles.js" | relative_url }}"></script>
+<script src="{{ " assets/js/custom-styles.js" | relative_url }}"></script>
 
 </html>

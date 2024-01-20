@@ -1,14 +1,17 @@
-
 /**
- * _layout.scss
+ * default.html
  */
 
-.site-header
-{
+.site-header {
   position: sticky;
-  top: 0px;
-  background-color: rgba(255,255,255,1);
+  top: 0;
+  background-color: rgba(255, 255, 255, 1);
   z-index: 1;
+  transition: top 0.5s;
+}
+
+.hide-site-header {
+  top: -100%;
 }
 
 
@@ -17,12 +20,10 @@
  * about.md
  */
 
-@import
-  "https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+@import "https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
 ;
 
-.Icon-link
-{
+.Icon-link {
   transition: 0.3s;
   text-decoration: none;
   font-size: 7.5vmin;
@@ -31,39 +32,33 @@
   display: inline-block;
 }
 
-.Icon-link:visited
-{
+.Icon-link:visited {
   text-decoration: none;
   color: black;
 }
 
-.Icon-link:hover
-{
+.Icon-link:hover {
   color: DodgerBlue;
   text-decoration: underline;
   transform: scale(1.2);
   transition: 0.3s;
 }
 
-.Info
-{
+.Info {
   display: flex;
   align-items: center;
 }
 
-.Text-block
-{
+.Text-block {
   flex-grow: 1;
   text-align: center;
 }
 
-.Img-block
-{
+.Img-block {
   margin: 2.5vmin;
 }
 
-.Avatar
-{
+.Avatar {
   border-radius: 2vmin;
   width: 30vmin;
   height: 30vmin;
@@ -75,33 +70,28 @@
  * archive.md
  */
 
-@import
-  "https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+@import "https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
 ;
 
-.Option-width
-{
+.Option-width {
   width: 100%;
   text-decoration: none;
 }
 
-.Group-Container-Full-Display
-{
+.Group-Container-Full-Display {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.Group-Container-Scrolling-Display
-{
+.Group-Container-Scrolling-Display {
   display: flex;
   flex-direction: row;
   overflow: auto;
 }
 
-.Single-Container
-{
+.Single-Container {
   position: relative;
   width: 170px;
   min-width: 170px;
@@ -113,8 +103,7 @@
   align-items: center;
 }
 
-.ImgBorder
-{
+.ImgBorder {
   transition: 0.3s;
   display: inline-block;
   width: 100%;
@@ -124,29 +113,25 @@
 }
 
 
-.Single-Container:hover .ImgBorder
-{
+.Single-Container:hover .ImgBorder {
   border-color: DodgerBlue;
   transform: scale(1.1);
   transition: 0.3s;
 }
 
-.ImgOpacity
-{
+.ImgOpacity {
   opacity: 1;
   width: 100%;
   transition: 0.3s;
   vertical-align: top;
 }
 
-.Single-Container:hover .ImgOpacity
-{
+.Single-Container:hover .ImgOpacity {
   opacity: 0.15;
   transition: 0.3s;
 }
 
-.Text
-{
+.Text {
   color: black;
   font-size: 20px;
   text-decoration: none;
@@ -160,21 +145,18 @@
   justify-content: center;
 }
 
-.Single-Container:hover .Text
-{
+.Single-Container:hover .Text {
   opacity: 1;
   color: black;
   text-decoration: none;
 }
 
-.Text:visited
-{
+.Text:visited {
   text-decoration: none;
   color: black;
 }
 
-.Selection
-{
+.Selection {
   color: black;
   font-size: 20px;
   text-decoration: none;
@@ -193,14 +175,12 @@
   flex-wrap: wrap;
 }
 
-.Single-Container:hover .Selection
-{
+.Single-Container:hover .Selection {
   opacity: 1;
   transition: 0.3s;
 }
 
-.Option
-{
+.Option {
   position: relative;
   border: black solid 3px;
   padding: 3%;
@@ -210,8 +190,7 @@
   width: auto;
 }
 
-.Option:hover
-{
+.Option:hover {
   border-color: DodgerBlue;
   transform: scale(1.1);
   transition: 0.3s;
@@ -223,12 +202,10 @@
  * default.html
  */
 
-.section-nav
-{
+.section-nav {
   display: none;
 
-  @media screen and (min-width: $on-medium)
-  {
+  @media screen and (min-width: $on-medium) {
     display: block;
     text-align: left;
     background-color: #fff;
@@ -241,12 +218,11 @@
     border: 1px solid #e8e8e8;
     border-radius: 3px;
     position: fixed;
-    left: 25px; 
+    left: 25px;
     top: 90px;
   }
 
-  @media screen and (min-width: calc($on-large + 90px))
-  {
+  @media screen and (min-width: calc($on-large + 90px)) {
     display: block;
     text-align: left;
     background-color: #fff;
@@ -259,10 +235,10 @@
     border: 1px solid #e8e8e8;
     border-radius: 3px;
     position: fixed;
-    left: calc( (100vw - 1455px) /2); 
+    left: calc((100vw - 1455px) /2);
     top: 90px;
   }
-  
+
 }
 
 .hide-and-display {
@@ -283,7 +259,7 @@
   clear: both;
 }
 
-.post-thumbnail img{
+.post-thumbnail img {
   margin-left: 5px;
   margin-right: 15px;
   float: left;
