@@ -18,32 +18,33 @@ layout: default
     </h3>
     <span>[
       {% for tag in post.tags %}
-        {% capture tag_name %}{{ tag }}{% endcapture %}
-        <a href="{{ site.baseurl }}/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code></a>
+      {% capture tag_name %}{{ tag }}{% endcapture %}
+      <a href="{{ site.baseurl }}/tag/{{ tag_name }}"><code
+          class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code></a>
       {% endfor %}
       ]</span>
 
-      <br><br>
+    <br><br>
 
-      {%- if site.show_description -%}
-        <div class="post-info">
+    {%- if site.show_description -%}
+    <div class="post-info">
 
-          <!-- Post Thumbnail -->
-          {%- if post.thumbnail -%}
-            <div class="post-thumbnail">
-              <img src="{{ post.thumbnail }}" alt="Post Thumbnail">
-            </div>
-          {%- endif -%}
-      
-          <!-- Description -->
-          {%- if post.description -%}
-            <div class="post-description">
-              {{ post.description }}
-            </div>
-          {%- endif -%}
-
-        </div>
+      <!-- Post Thumbnail -->
+      {%- if post.thumbnail -%}
+      <div class="post-thumbnail">
+        <img src="{{ post.thumbnail }}" alt="Post Thumbnail">
+      </div>
       {%- endif -%}
+
+      <!-- Description -->
+      {%- if post.description -%}
+      <div class="post-description">
+        {{ post.description }}
+      </div>
+      {%- endif -%}
+
+    </div>
+    {%- endif -%}
   </li>
   {%- endfor -%}
 </ul>
