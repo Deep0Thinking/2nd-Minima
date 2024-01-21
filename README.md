@@ -106,13 +106,13 @@ If so, your next step is simple. Dive into our comprehensive guide post titled [
 
 <h4 id="2.3">2.3 giscus.app</h4>
 
-You might have noticed the **fake comments section** at the bottom of the "**How to post posts**" post. This is where you'll set up your **real comments section**.
+You might have noticed the **fake comments section** at the bottom of the "**How to post posts**" post and "**Archive**" page and "**About**" page. This is where you'll set up your **real comments section**.
 
 The actual comments functionality is powered by [giscus.app](https://giscus.app), a robust platform for enabling comments on your site. To get started, visit [giscus.app](https://giscus.app) and follow the detailed instructions provided there to enable the giscus comment section.
 
 Once you've read through the giscus instructions and obtained the necessary embed code, it's time to integrate it into your site. Replace the **fake comments section** code at the bottom of your "**/_layouts/post.html**" file with the new giscus embed code. The placeholder code you'll be replacing looks like this: `<h1><a href="https://github.com/Deep0Thinking/2nd-Minima#2.4">fake comments section</a></h1>`. Remember to repeat this step for your "**/about.md**" and "**/archive.md**" files, as they also contain placeholders for the **fake comments section**.
 
-You might wonder why not simply insert the giscus embed code into the "**/_layouts/page.html**" file, as both the [**about**](https://deep0thinking.github.io/2nd-Minima/about.html) and [**archive**](https://deep0thinking.github.io/2nd-Minima/archive.html) pages use `layout: page` in their predeclarations. The reason is that doing so would also add a comments section to the [**all-tags**](https://deep0thinking.github.io/2nd-Minima/all-tags.html) page and every single **tag** page, which isn't ideal. In my view, this could clutter these pages and detract from the site's aesthetic appeal.
+You might wonder why not simply insert the giscus embed code into the "**/_layouts/page.html**" file, as both the [**about**](https://deep0thinking.github.io/2nd-Minima/about.html) and [**archive**](https://deep0thinking.github.io/2nd-Minima/archive.html) pages use `layout: page` in their predeclarations. The reason is that doing so would also add a comments section to the [**all-tags**](https://deep0thinking.github.io/2nd-Minima/all-tags.html) page and every single **tag** page, which isn't ideal. In my view, this could clutter these pages and detract from the site's aesthetic appeal. But you can surely do that based on you preference.
 
 After you've completed these steps, the giscus comments sections should now be visible at the bottom of the relevant pages.
 
