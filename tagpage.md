@@ -1,4 +1,0 @@
----
-layout: tagpage
-title: Tag
----
