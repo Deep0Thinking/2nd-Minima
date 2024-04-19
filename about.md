@@ -18,7 +18,7 @@ title: About
 </div>
 
 
-Welcome to the "About" page of your site! This is where you can introduce yourself or your project. Below, you'll find a template structure along with instructions to personalize your page. If you need help, feel free to contact me through email: <a href="mailto:Deep_Thinking@outlook.com">Deep_Thinking@outlook.com</a>
+Welcome to the "About" page of your site! This is where you can introduce yourself or your project. Below, you'll find a template structure along with instructions to personalize your page. If you need help, feel free to ask [2nd-Minima Helper](https://chat.openai.com/g/g-ZVjN1oUoT-2nd-minima-helper) or directly contact me through email: <a href="mailto:Deep_Thinking@outlook.com">Deep_Thinking@outlook.com</a>
 
 
 <h3 style="color: red">Instruction part 1 begins</h3>

@@ -10,7 +10,9 @@
 
   - [0.3 About the usage](#0.3)
 
-  - [0.4 About the acknowledgement](#0.4)
+  - [0.4 About the 2nd-Minima Helper](#0.4)
+
+  - [0.5 About the acknowledgement](#0.5)
 
 - [1 Basic set up](#1)
 
@@ -33,8 +35,6 @@
 
   - [2.6 favicon](#2.6)
 
-  - [2.7 favicon](#2.7)
-
 <hr>
 
 <h3 id="0">0 About</h3>
@@ -55,7 +55,13 @@ This "[**/README.md**](https://github.com/Deep0Thinking/2nd-Minima/blob/master/R
 
 With the [MIT License](https://github.com/Deep0Thinking/2nd-Minima/blob/main/LICENSE), you have extensive freedom to modify and adapt the [**2nd-Minima**](https://github.com/Deep0Thinking/2nd-Minima) template to suit your personal needs. You may also use it for commercial purposes.
 
-<h4 id="0.4">0.4 About the acknowledgement</h4>
+<h4 id="0.4">0.4 About the 2nd-Minima Helper</h4>
+
+Welcome to your personal assistant, the [2nd-Minima Helper](https://chat.openai.com/g/g-ZVjN1oUoT-2nd-minima-helper)! This AI-powered chatbot is designed to help users navigate the setup and customization of their [**2nd-Minima**](https://github.com/Deep0Thinking/2nd-Minima) website template. Whether you have questions about configuration files, need guidance on creating posts, or require assistance with deployment, the [2nd-Minima Helper](https://chat.openai.com/g/g-ZVjN1oUoT-2nd-minima-helper) is here to assist you.
+
+To start interacting with the [2nd-Minima Helper](https://chat.openai.com/g/g-ZVjN1oUoT-2nd-minima-helper), simply visit this [link](https://chat.openai.com/g/g-ZVjN1oUoT-2nd-minima-helper). The helper is equipped with detailed knowledge of the [**2nd-Minima**](https://github.com/Deep0Thinking/2nd-Minima) template and can provide step-by-step instructions, troubleshoot issues, and offer tips for enhancing your site. If you encounter any difficulties or have questions, don't hesitate to reach out to the [2nd-Minima Helper](https://chat.openai.com/g/g-ZVjN1oUoT-2nd-minima-helper) for assistance. If the issue persists, please contact me through email ([Deep_Thinking@outlook.com](mailto:Deep_Thinking@outlook.com)).
+
+<h4 id="0.5">0.5 About the acknowledgement</h4>
 
 I would like to thank all the developers and contributors of the [Jekyll-theme-Minima](https://github.com/jekyll/minima), because the [**2nd-Minima**](https://github.com/Deep0Thinking/2nd-Minima) is an advanced personal-website-template repository that developed mainly based on the [Jekyll-theme-Minima](https://github.com/jekyll/minima).
 
@@ -140,6 +146,3 @@ Tailoring the [**archive**](https://deep0thinking.github.io/2nd-Minima/archive.h
 The favicon is a small, iconic image that represents your webpage. Have you noticed the black icon next to your webpage title? That's the default favicon I've set for this repository. But you can personalize it by creating your own. For this, I recommend using [favicon.io](https://favicon.io). It's a user-friendly website that lets you design and generate your own favicon for free.
 
 Once you've crafted your favicon, the next step is simple. Just place your newly created "**favicon.ico**" file into the "**/favicon/**" folder, replacing the existing one (the old "**favicon.ico**" file I placed there). ***(Attention: the new file you replaced with under the "/favicon/" must be named exactly "favicon.ico" for it to function correctly )*** With this change, your webpage will display the favicon you've designed, adding a unique touch to your site.
-
-<h4 id="2.7">2.7 Link, List</h4>
-
