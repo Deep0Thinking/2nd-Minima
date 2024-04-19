@@ -3,7 +3,6 @@ layout: page
 title: About
 ---
 
-
 <div style="display: flex; align-items: center;">
 	<div style="flex-grow: 1; text-align: center; margin-right: 2.5vmin;">
 		<h2>
@@ -19,12 +18,12 @@ title: About
 </div>
 
 
-
+Welcome to the "About" page of your site! This is where you can introduce yourself or your project. Below, you'll find a template structure along with instructions to personalize your page. If you need help, feel free to contact me through email: <a href="mailto:Deep_Thinking@outlook.com">Deep_Thinking@outlook.com</a>
 
 
 <h3 style="color: red">Instruction part 1 begins</h3>
 
-To find your github avatar HTML source code, you need to first view the source code of your Github profile page (please go google "how to view the source code of a webpage", and it is very easy to apply), then you need to use the built-in pointer tool of your browser to locate and click on your Github avatar area, then you will be lead to a HTML source code section in a form like :
+To find your github avatar HTML source code, you need to first view the source code of your Github profile page (please google "how to view the source code of a webpage", trust me, it is very easy to apply), then you should use the built-in pointer tool of your browser to locate and click on your Github avatar area, this will lead you to the HTML source code section in the form like:
 
 ```html
 <img style="height:auto;" alt="" width="260" height="260" class="avatar avatar-user width-full border color-bg-default" src="https://avatars.githubusercontent.com/u/103571424?v=4">
@@ -39,10 +38,10 @@ Next, please just copy the value of the `src` part and pasted it in the correspo
 
 
 ### Try to write something here:
-Try to write something here
+Here, you can talk about yourself, your interests, or the purpose of your site.
 
 ### Maybe your hobbies:
-...
+Share your hobbies or things you're passionate about.
 
 ### Maybe your Contact Information:
 
@@ -66,9 +65,9 @@ Your DiscordTag or Facebook.....
 
 <h3 style="color: red">Instruction part 2 begins</h3>
 
-If you want to add more platforms information, you can go to [remixicon.com](https://remixicon.com) to find icons you want and copy the corresponding embed code, for exam: `<i class="ri-github-line"></i>` . Then paste it and edit in the form of the above, and it'll work properly.
+If you want to add more platforms information, you can visit [remixicon.com](https://remixicon.com) to choose the desired icons and copy the corresponding embed code, for example: `<i class="ri-github-line"></i>` . Then insert it in the form of the above.
 
-Finally, after getting familiar with these procedure, you can delete this instruction part (from `<h3 style="color: red">Instruction part 2 begins</h3>` to `<h3 style="color: red">Instruction part 2 ends</h3>`) safely.
+After you're comfortable with the setup, you can remove these instructions safely (from `<h3 style="color: red">Instruction part 2 begins</h3>` to `<h3 style="color: red">Instruction part 2 ends</h3>`).
 
 <h3 style="color: red">Instruction part 2 ends</h3>
 
