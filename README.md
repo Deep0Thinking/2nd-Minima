@@ -16,7 +16,7 @@
 
   - [1.1 Use this template](#1.1)
 
-  - [1.2 Webpage pre-set-up and deployment](#1.2)
+  - [1.2 Webpage edit and deployment](#1.2)
 
 
 - [2 Usage](#2)
@@ -33,6 +33,7 @@
 
   - [2.6 favicon](#2.6)
 
+  - [2.7 favicon](#2.7)
 
 <hr>
 
@@ -42,7 +43,7 @@
 
 The **2nd-Minima** Github repository is designed for individuals seeking to handily create a blog. It's a user-friendly, advanced **template** based on the popular [Jekyll-theme-Minima](https://github.com/jekyll/minima), perfect for those unfamiliar with front-end programming.
 
-Experience a live example of a [2nd-Minima](https://github.com/Deep0Thinking/2nd-Minima) based website here: [Deep0Thinking.github.io](https://deep0thinking.github.io)
+Experience a live demo of a [2nd-Minima](https://github.com/Deep0Thinking/2nd-Minima) based website here: [Deep0Thinking.github.io](https://deep0thinking.github.io)
 
 ![Deep0Thinking.github.io](https://repository-images.githubusercontent.com/481486169/e28e51cb-d7c1-49c7-b8e5-c81a3e27fb46)
 
@@ -76,15 +77,25 @@ Please direct to the [**2nd-Minima**](https://github.com/Deep0Thinking/2nd-Minim
 
 As for the other repo settings, you can stick with the default options or adjust them according to your preferences. Keep in mind, even if you initially set your repository to private, others can still access your personal website once it's deployed and they have the link. (Note: even if you initially set your repository to `private`, others can still access your personal website once it's deployed and they have the link) 
 
-<h4 id="1.2">1.2 Webpage pre-set-up and deployment</h4>
+<h4 id="1.2">1.2 Webpage edit and deployment</h4>
 
-Please direct to the page of the repo which you've just created using the [**2nd-Minima**](https://github.com/Deep0Thinking/2nd-Minima) template, click on `< > Code` (the green button right under the "Fork" button) -> `HTTPS` -> "Copy url to clipboard", and then open your terminal (or command line) and type in `git clone ` and paste the url you've just copied from the repo page, then press `Enter` to clone the repo to your local computer. (Note: you need to have "git" installed on your computer first, if you don't have git installed, please check here: https://git-scm.com/downloads)
+Please direct to the page of the repo which you've just created using the [**2nd-Minima**](https://github.com/Deep0Thinking/2nd-Minima) template, click on `< > Code` (the green button right under the "Fork" button) -> `HTTPS` -> "Copy url to clipboard", and then open your terminal (or command line) and type in `git clone ` and paste the url you've just copied from the repo page (your code should look like `git clone https://github.com/????.git`), then press `Enter` to clone the repo to your local computer. (Note: you need to have "git" installed on your computer first, if you don't have git installed, please check here: https://git-scm.com/downloads)
 
-Once the cloning process is complete, please direct to the folder of the repo you've just cloned, and open the "**/.github/workflows/jekyll.yml**" file, then please replace the `/2nd-Minima` in `jekyll_baseurl: '/2nd-Minima'` with your repo name: If your repo is named "Cookie-0111", then set it to `jekyll_baseurl: '/Cookie-0111'`; If your repo name is in the form of "your-Github-username.github.io" like "louis.github.io", set it to `jekyll_baseurl: ''`. Don't forget to save the changes. (Note: the repo name is case-sensitive, so please type in the repo name exactly as it is)
+Next, locate to the cloned repo folder on your local computer, and open this repo with a text editor or IDE (like VS Code or Visual Studio). Then open your terminal (or command line) and navigate to the repo folder using `cd` command, like `cd /absolute_path/to/your/repo/folder`.
 
-Return to the page of the repo you created, then navigate to `Settings` (located just beneath the search bar) -> `Pages` (on the left column list) -> `Deploy from a branch` -> `Github Actions`. And after about 2 minute, your personal website will be generated successfully. To monitor its deployment state, revisit your repository's main page, keep an eye on the small yellow dot (next to the green button `< > Code`). Upon successful deployment, this dot will change to a green check mark ✅ (Remember to refresh the page to update the status indicator). (Note: if you see a red cross ❌ instead of the check mark ✅, please check the "**/.github/workflows/jekyll.yml**" file and make sure you've replaced the `/2nd-Minima` in `jekyll_baseurl: '/2nd-Minima'` as previously instructed)
+Then type in `bundle install` in the terminal to install the necessary gems for the Jekyll theme. (Note: If you receive an error message, you may need to install all the prerequisites like Ruby and RubyGems first. You can find more information on how to do this at [https://jekyllrb.com/docs/](https://jekyllrb.com/docs/))
 
-To visit your site, navigate to `Settings` -> `Pages` -> `Visit site` , it's a good idea to bookmark your site's url for easy access. Alternatively, you can add your site's url into your repo's `About` section, which is located next to the green button `< > Code` on your repo Github main page. Click on the option button (the gear icon) in that `About` block to add your link. You can also create a direct link combines with the heading style in your "**/README.md**" file under the repo root folder, like `# [please-paste-your-webpage-link-here](https://please-paste-your-webpage-link-here)`. This creates a clickable heading on your repository's main page, as GitHub automatically displays the "README.md" file there for every repo.
+After the installation is complete, type in `bundle exec jekyll serve` to start the Jekyll server. You should see a message like `Server address: http://?????`, which indicates the server is running successfully. Open your browser and navigate to the url address shown in the terminal to view your website (Note: this is url just a local preview of your website on your computer, others will not be able to see it unless you deploy it to GitHub Pages publicly). (Note: if you see an error message, please check the terminal output for more information on how to resolve the issue. If you don't know how to fix it, please email me ([Deep_Thinking@outlook.com](mailto:Deep_Thinking@outlook.com)) directly or open an issue in the **2nd-Minima** repo "[**Issues**](https://github.com/Deep0Thinking/2nd-Minima/issues)" section, and I'll try my best to help you resolve the it.)
+
+Once you're satisfied with your website's appearance, you can press `Ctrl + C` in the terminal under the repo folder directory to stop the Jekyll server. If you don't know what to edit or how to edit, please read the following [**Usage**](#2) section for more detailed guidance.
+
+Now it's time to deploy it to GitHub Pages. I've already set up the necessary configurations in the repo for you, which is the "**.github/workflows/jekyll.yml**" file. So to complete the deployment, all you have to do it, open your terminal again (or command line) and type in `git add .` under the same repo folder directory, then `git commit -m "Initial commit"`, and finally `git push origin main` to push your changes to your remote repo. (Note: if you're using a different branch, replace `main` with the name of your branch.)
+
+(If you want to learn more about git and GitHub, I recommend checking out this [tutorial](https://deep0thinking.com/?p=4886) on [my blog](https://deep0thinking.com) or other resources online.)
+
+Then navigate to `Settings` (located just beneath the search bar) -> `Pages` (on the left column list). You should be able to see `Your site is live at ...`, which implies your blog's url. After about 1 minute (for the webpage deployment), your blog's webpage should be generated successfully. To monitor its deployment status, revisit your repository's main page, keep an eye on the small yellow dot (next to the green button `< > Code`). Upon successful deployment, this dot will change to a green check mark ✅ (Remember to refresh the page to update the status indicator). (Note: if you see a red cross ❌ instead of the check mark ✅, that indicates the deployment failed. In this case, please email me ([Deep_Thinking@outlook.com](mailto:Deep_Thinking@outlook.com)) directly or open an issue in the **2nd-Minima** repo "[**Issues**](https://github.com/Deep0Thinking/2nd-Minima/issues)" section, and I'll try my best to help you resolve the it.)
+
+To visit your site, navigate to `Settings` -> `Pages` -> `Visit site` , it's a good idea to bookmark your site's url for easy access. Alternatively, you can add your site's url into your repo's `About` section, which is located next to the green button `< > Code` on your repo Github main page. Click on the option button (the gear icon) in that `About` block to add your link. You can also create a direct link combines with the heading style in your "**/README.md**" file under the repo root folder, like `# [please-paste-your-repo-title-here](https://please-paste-your-webpage-link-here)`. This creates a clickable heading on your repository's main page, as GitHub automatically displays the "README.md" file there for every repo.
 
 ---
 
@@ -129,3 +140,6 @@ Tailoring the [**archive**](https://deep0thinking.github.io/2nd-Minima/archive.h
 The favicon is a small, iconic image that represents your webpage. Have you noticed the black icon next to your webpage title? That's the default favicon I've set for this repository. But you can personalize it by creating your own. For this, I recommend using [favicon.io](https://favicon.io). It's a user-friendly website that lets you design and generate your own favicon for free.
 
 Once you've crafted your favicon, the next step is simple. Just place your newly created "**favicon.ico**" file into the "**/favicon/**" folder, replacing the existing one (the old "**favicon.ico**" file I placed there). ***(Attention: the new file you replaced with under the "/favicon/" must be named exactly "favicon.ico" for it to function correctly )*** With this change, your webpage will display the favicon you've designed, adding a unique touch to your site.
+
+<h4 id="2.7">2.7 Link, List</h4>
+
