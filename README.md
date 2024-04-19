@@ -89,7 +89,7 @@ After the installation is complete, type in `bundle exec jekyll serve` to start 
 
 Once you're satisfied with your website's appearance, you can press `Ctrl + C` in the terminal under the repo folder directory to stop the Jekyll server. If you don't know what to edit or how to edit, please read the following [**Usage**](#2) section for more detailed guidance.
 
-Now it's time to deploy it to GitHub Pages. I've already set up the necessary configurations in the repo for you, which is the "**.github/workflows/jekyll.yml**" file. So to complete the deployment, all you have to do it, open your terminal again (or command line) and type in `git add .` under the same repo folder directory, then `git commit -m "Initial commit"`, and finally `git push origin main` to push your changes to your remote repo. (Note: if you're using a different branch, replace `main` with the name of your branch.)
+Now it's time to deploy it to GitHub Pages. I've already set up the necessary configurations in the repo for you, which is the "**.github/workflows/jekyll.yml**" file. So to complete the deployment, all you have to do it, open your terminal again (or command line) and type in `git add .` under the same repo folder directory, then `git commit -m "Initial commit"`, and finally `git push origin main` to push your changes to your remote repo.
 
 (If you want to learn more about git and GitHub, I recommend checking out this [tutorial](https://deep0thinking.com/?p=4886) on [my blog](https://deep0thinking.com) or other resources online.)
 
