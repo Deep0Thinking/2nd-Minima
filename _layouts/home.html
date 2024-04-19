@@ -48,14 +48,18 @@ layout: default
             <!-- Post Thumbnail -->
             {%- if post.thumbnail -%}
               <div class="post-thumbnail">
-                <img src="{{ post.thumbnail }}" alt="Post Thumbnail">
+                <a href="{{ post.url }}">
+                  <img src="{{ post.thumbnail }}" alt="Post Thumbnail">
+                </a>
               </div>
             {%- endif -%}
         
             <!-- Description -->
             {%- if post.description -%}
               <div class="post-description">
-                {{ post.description }}
+                <a href="{{ post.url }}">
+                  {{ post.description }}
+                </a>
               </div>
             {%- endif -%}
 

@@ -266,4 +266,14 @@
   width: 200px;
   height: auto;
   border-radius: 10px;
+  transition: 0.3s;
+}
+
+.post-thumbnail img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.post-description a {
+  color: black;
 }
