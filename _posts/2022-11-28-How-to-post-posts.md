@@ -2,18 +2,20 @@
 layout: post
 title: How to post posts
 tags: this-is-a-tag WoW let's go
+toc: true
 description: You could write a brief description here to catch your readers' interests, like this is a post about how to post posts :)
+thumbnail: https://deep0thinking.com/wp-content/uploads/2024/01/my-first-post.jpg
 ---
 
-First, let's talk about the basic requirements for a valid post file:
+Welcome to the 2nd-Minima Jekyll theme! This guide will walk you through creating and managing your posts effectively. Whether you're a beginner or an experienced Jekyll user, these instructions will help you make the most out of this theme.
 
 - **External requirements**:
 
-  - **Naming**: You need to name your post file with the naming format of "Year-Month-Date-Title.md", for example: "2022-11-28-My-first-post.md". ***(Attention: The file naming does not allow any "space" character, so please make sure to use "-" to replace them.)***
+  - **Naming**: Posts should be named following the "Year-Month-Date-Title.md" format, for example: "2022-11-28-My-first-post.md". ***(Attention: Spaces (` `) are not permitted in file names. Use hyphens (`-`) to separate words)***
 
-  - **Location**: You need to place your post file under the "**/_posts/**" folder.
+  - **Location**: Place your post files in the "**/_posts/**" directory
 
-  - **tag-page**: (You could temporarily skip this part until you have gotten up to the **tags** part under **Internal requirements** below) Please remember, if you add tags to a post, let's assume one of the tags name is "the-tag-you-add", then you should create a "**the-tag-you-add.md**" file under the "**/tag/**" folder in order to generate a tag-page for the "the-tag-you-add" and with just these contents in that "**the-tag-you-add.md**":
+  - **tag-page**: (This section can be deferred until you've read about **tags** in the **Internal Requirements**.) Please remember, if you add tags to a post, let's assume one of the tags name is "the-tag-you-add", then you should create a "**the-tag-you-add.md**" file under the "**/tag/**" folder in order to generate a tag-page for the "the-tag-you-add" tag and the "**the-tag-you-add.md**" file should contain the following:
 
     ```markdown
     ---
@@ -23,7 +25,9 @@ First, let's talk about the basic requirements for a valid post file:
     ---
     ```
 
-    And that tag-page would collect and display all your posts with that tag. In fact, there is a more efficient way to repeat this repetitive procedure, which is to create a python script to help you do that, for more detailed information please click on the solutions link below.
+    ***(Attention: Ensure the title is enclosed in double quotes (`"`) if it contains a colon (`:`) for successful tag page creation.)***
+
+    The tag page will aggregate and display all posts with the specified tag. Considering a more efficient implementation, which is to create a python script to automate this process, more details can be found in the solutions link right below.
 
     *The tags and tag-page display solutions are [here](http://longqian.me/2017/02/09/github-jekyll-tag/) provided by [Long Qian](http://longqian.me/aboutme/), great thanks to him!*
 
@@ -31,32 +35,48 @@ First, let's talk about the basic requirements for a valid post file:
 
   - **Predeclaration**:
 
-    Every "**post.md**" file you posted need to have a **Predeclaration** in the form of this at the file's head (beginning) part (including this file: You can see the **Predeclaration** part at the beginning):
+    Each "**post.md**" file you posted must have a **Predeclaration** block in the form of this at the file's head (beginning) part (including this file: You can see the **Predeclaration** part at the beginning):
 
     ```markdown
     ---
     layout: post
     title: How to post posts
     tags: this-is-a-tag WoW let's go
+    toc: true
     description: You could write a brief description here to catch your readers' interests, like this is a post about how to post posts :)
+    thumbnail: https://deep0thinking.com/wp-content/uploads/2024/01/my-first-post.jpg
     ---
     ```
 
     And let me explain this part line by line:
 
-    - **layout**: post
+    - **layout**: Apply the "???" layout from "_layouts/???.html" to the post.
 
-      Please just write 1 word "post". This means your post that you want to post would use the **post** layout of "**_layouts/page.html**" file.
+      Please just write 1 word "post" here for every post file. This means to apply the **post** layout from "**_layouts/post.html**" on your post. 
 
-    - **title**: Please write your post title here.
+    - **title**: The title of your post.
 
       In fact, the file name in the **Naming** part of the **External requirements** can be different from the title name here, but it is always a good habit to keep them the same to disambiguate and improve convenience (just like writing the annotation when coding), especially when you want to read or modify these posts files in the future. But if you find a more efficient and effective naming method, you could definitely follow your way.
 
-    - **tags**: Please write your post tag(s) here.
+    - **tags**: List the tags associated with your post, separated by spaces (` `). Use hyphens (`-`) to avoid breaking multi-word tags.
 
-      If you want to put 2 or more tags here, you need to use "space" to separate them, and what can you do if you don't want the tag to be separated, you could use "-" to replace the "space" to combine the words and prevent the breakage in 1 tag. For example: `this-is-a-tag` is 1 tag, `WoW` is 1 tag, `let's go` is 2 tags, they actually break into 2 tags of `let's` and `go` due to the "space" between them.
+      If you want to put 2 or more tags here, you need to use "space" (` `) to separate them, and what can you do if you don't want the tag to be separated, you could use `-` to replace the "space" to combine the words and prevent the breakage in 1 tag. For example: `this-is-a-tag` is 1 tag, `WoW` is 1 tag, but `let's go` is 2 tags, since it actually breaks into the 2 tags `let's` and `go` due to the "space" between them.
 
-    - **description**: You could write a brief description in the description part to catch your readers' interests ***(Attention: Please don't leave "space" between ":" and following the word or punctuation in the description part, or your post and description will not be able to display.)*** , like this is a post about how to post posts (Me: It sounds super attractive right? Me again: Hahahahaha, no.) . Or, if you don't like the description part, you could always turn it off in the "**/_config.yml**" file by replacing the `true` in `show_description: true` with `false` or just simply delete that whole line.
+    - **toc**: Set to `true` to include a Table of Contents, `false` otherwise.
+
+      The table of contents is a block contains a list of links to the different sections in your post. It is generated automatically based on the headings in your post. If you want to turn it off, just replace the `true` in `toc: true` with `false` or just simply delete that whole line. 
+
+      When `true`, the toc appears on the left side of your post. It automatically generates clickable links to different sections based on Markdown headings (e.g., `# Heading`, `## Subheading`). Clicking on these links allows readers to quickly navigate to specific sections of your post. ***(Attention: While HTML headings like `<h1>Heading</h1>` will be included in the toc, they are not interactive and cannot be clicked to navigate to the respective sections. This feature is exclusively available for Markdown headings.)***
+
+      Conversely, setting `toc` to `false` or removing the line entirely disables the toc. This means no interactive list of sections will appear on the left of your post, and there will be no clickable links for navigation within the post.
+
+    - **thumbnail**: Put your post thumbnail link (URL or local path) here.
+
+      The thumbnail link is the link of the image you want to display on the post page, it can be an URL like this: `https://deep0thinking.com/wp-content/uploads/2024/01/my-first-post.jpg` or a local file path like this: `/assets/img/my-first-post.jpg`. ***(Attention: Please make sure to use the correct link format, or the thumbnail would not be able to display.)***
+
+    - **description**: A short description to engage readers. Avoid spaces after colons in `???` inside `description: ???` like `description: Hi, : )`; `description: Hi, :)` is permitted.
+    
+      You could write a brief description in the description part to catch your readers' interests ***(Attention: Please don't leave "space" (` `) after `:` and following the word or punctuation in the description part, or your post and description will not be able to display.)*** , like this is a post about how to post posts (Me: It sounds super attractive right? Me again: Hahahahaha, no.) . If you don't want the description part in all posts (the post layout), you could disable it permanently in the "**/_config.yml**" file by replacing the `true` in `show_description: true` with `false` or just simply delete that whole line.
 
   - **Post body part**:
 
@@ -70,12 +90,16 @@ First, let's talk about the basic requirements for a valid post file:
 
       - **Javascript**
 
-      Don't worry, you don't need to master these 4 languages to write a post, in fact, using only the Markdown language is basically enough (look at this post file name, its suffix is ".md" and md represents the Markdown language), because Markdown language can support the basic post arrangements and it is super easy and convenient to learn and use. BTW I bet you could master its basic syntax within 5 minutes, then you could be able to write the following Mardown contents too:
+      Don't worry, mastery of these languages is not required to write a post... In fact, using only the **Markdown** language is sufficient for most posts (look at this post file name, its suffix is ".md" and md represents the Markdown language), because Markdown language can support the basic post arrangements and it is super easy and convenient to learn and use. BTW I bet you could master its basic syntax within 5 minutes, then you could be able to write the following Markdown contents too:
 
 
 <hr>
 
-<br><br>
+<br>
+
+# Markdown Syntax
+
+<br>
 
 ```markdown
 # Heading 1
@@ -157,17 +181,17 @@ print(a)
 Here is a table:
 
 |title 1|title 2|title 3|
-|:-|:-:|-:|
-|left|middle|right|
-|text|text|text|
+|:-     |  :-:  |     -:|
+|left   |middle |right  |
+|text   |text   |text   |
 ```
 
 Here is a table:
 
 |title 1|title 2|title 3|
-|:-|:-:|-:|
-|left|middle|right|
-|text|text|text|
+|:-     |  :-:  |     -:|
+|left   |middle |right  |
+|text   |text   |text   |
 
 <br><br>
 
@@ -239,21 +263,25 @@ BTW: They are totally free and it would be better if you use both of them to lea
 
 <br><br>
 
+# HTML Syntax
+
+<br><br>
+
 ```html
-<h1> Heading </h1>
-<h2> Heading </h2>
-<h3> Heading </h3>
-<h4> Heading </h4>
-<h5> Heading </h5>
-<h6> Heading </h6>
+<h1> Heading 1 a </h1>
+<h2> Heading 2 </h2>
+<h3> Heading 3 </h3>
+<h4> Heading 4 </h4>
+<h5> Heading 5 </h5>
+<h6> Heading 6 </h6>
 ```
 
-<h1> Heading </h1>
-<h2> Heading </h2>
-<h3> Heading </h3>
-<h4> Heading </h4>
-<h5> Heading </h5>
-<h6> Heading </h6>
+<h1> Heading 1 a </h1>
+<h2> Heading 2 </h2>
+<h3> Heading 3 </h3>
+<h4> Heading 4 </h4>
+<h5> Heading 5 </h5>
+<h6> Heading 6 </h6>
 
 <br><br>
 
@@ -453,4 +481,4 @@ BTW: They are totally free and it would be better if you use both of them to lea
 
 <br><br>
 
-Maybe you have already noticed the **fake comments section** below, wanna put it somewhere else or delete it? Click it for more information ~
+Maybe you have already noticed the **fake comments section** below, wanna activate it? Click it for more information ~
